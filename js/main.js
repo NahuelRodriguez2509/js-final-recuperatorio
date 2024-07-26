@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => mensajeDiv.remove(), 5000);
     }
 
-    fetch('../js/productos.json')
+    fetch('/js/productos.json')
         .then(response => response.json())
         .then(productos => renderizarProductos(productos))
         .catch(error => console.error('Error al cargar los productos:', error));
